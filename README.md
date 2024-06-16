@@ -53,7 +53,9 @@ For Lower Versions of Raspberry Pi:
 <li>Verify that Camera is set to Enabled. If it is not, enable it now.</li>
 <li>Reboot the Raspberry Pi to apply the changes.</li>
 </ol>
-! https://www.google.com/url?sa=i&url=https%3A%2F%2Fraspberrytips.com%2Finstall-camera-raspberry-pi%2F&psig=AOvVaw20PVPVS3R05qlT3aeASQ9r&ust=1718596160086000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiNnOGb34YDFQAAAAAdAAAAABAQ
+! [Camera config](https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/blob/main/raspberry-pi-configuration-camera.jpg?raw=true)
+![alt text](![image](https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/assets/145309713/580fd819-274c-44ab-bab2-05d28cf0e221)
+)
 
  
 
