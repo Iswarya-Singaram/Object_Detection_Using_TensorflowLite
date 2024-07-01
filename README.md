@@ -71,7 +71,7 @@ For Lower Versions of Raspberry Pi:
 ### Step1: Download the github repository
 Next, clone the github repository by using the following command
 ~~~
-git clone https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git
+https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite.git
 ~~~
 This downloads everything into a folder called TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.Since, the folder name is too long, we can rename it to tflite1 by using the following command. Then use cd to change the directory to tflite1
 ~~~
