@@ -1,4 +1,4 @@
-# Object Detection Using TensorflowLite
+# Object Detection Using Tensorflow-Lite
 Welcome to our Object Detection project, built using TensorFlow Lite and Raspberry Pi! This project leverages the power of machine learning to identify objects in real-time through a web camera. Designed to be lightweight and efficient, it's a perfect demonstration of edge AI capabilities, making it ideal for various applications such as home automation, security, and educational purposes.This guide provides step-by-step instructions for how to set up TensorFlow Lite on the Raspberry Pi and use it to run object detection models
 <p align=center>
 <img src="https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/assets/145309713/1c5b9b39-831e-4db2-aa8f-e0ced233a0c6" width="500" height="300">
@@ -95,14 +95,19 @@ source tflite1-env/bin/activate
 Note:To reactivate the tflite1-env virtual environment every time you open a new terminal window, you should navigate to the /home/pi/tflite1 directory and issue the command source tflite1-env/bin/activate. When the virtual environment is active, you will see (tflite1-env) appear at the beginning of your command prompt.
 ## Installing all the necessary packages
 Next, we'll install TensorFlow and OpenCV along with their required dependencies. While OpenCV is not essential for running TensorFlow Lite, the object detection scripts in this repository utilize it to capture images and visualize detection results.
+To install opencv use,
 ~~~
-pip install tensorflow==2.12
+pip install opencv-python
+~~~
+Now, install tensorflow
+~~~
+pip install tensorflow
 ~~~
 You can install any tensorflow version of your choice
 <p align="center">
-  <img src="https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/assets/145309713/70074049-dd87-4b18-8100-26eee172b4cd">
+  <img src="https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/assets/145309713/6fc1c8f5-24c0-41c0-a6c6-3d9cc734e976" width="500" height="300">
 </p>
-If you come across an error like "Failed to build wheels" as shown in the screenshot above, follow these steps in the terminal...
+If you come across an error like "Failed to build wheel for h5py" as shown in the screenshot above, follow these steps in the terminal...
 Install h5py by cloning the git
 
 ~~~
@@ -111,22 +116,47 @@ git clone https://github.com/h5py/h5py.git
 And change the directory into h5py
 ~~~
 cd h5py
-pip install -r requirements.txt
-pip install wheel
-pip install cython numpy
-pip install pkgconfig
-sudo apt-get install libhdf5-dev
-python setup.py build
-python setup.py install
-cd ..
-pip -c "import h5py"
-pip install tensorflow==2.12
 ~~~
+Now install libhdf5,protobuf,Cython,pkgconfig using the following commands
+~~~
+sudo apt install python3-dev libhdf5-dev
+pip install protobuf==3.20
+pip install Cython
+pip install pkgconfig
+~~~
+Now install setup.py using the following command
+~~~
+python setup.py install
+~~~
+We can leave the  h5py directory but using the command
+~~~
+cd ..
+~~~
+Now, we can install tensorflow without having to worry about the error.
+~~~
+pip install tensorflow
+~~~
+## Setting up the object detection model
+Download the sample model (which can be found on the Object Detection page of the official TensorFlow website) by issuing:
+~~~
+wget https://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip
+~~~
+Unzip it to a folder called "Sample_TFLite_model" by issuing (this command automatically creates the folder):
+~~~
+unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model
+~~~
+## Running the model
 Now run the Object detection model using the following command
 
 ~~~
 python3 TFLite_detection_webcam.py --modeldir=Sample_TFLite_model
 ~~~
+
+## Credits
+This project is based on the work done by Edje Electronics. We extend our gratitude for their comprehensive guide on TensorFlow Lite Object Detection.
+
+## Contributing
+We welcome contributions to improve this project. If you find any errors in the code or have suggestions for improvements, please feel free to open an issue or submit a pull request. Your feedback and contributions are greatly appreciated!
 
 
 
