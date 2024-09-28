@@ -1,7 +1,7 @@
 # Object Detection Using Tensorflow-Lite
 Welcome to our Object Detection project, built using TensorFlow Lite and Raspberry Pi! This project leverages the power of machine learning to identify objects in real-time through a web camera. Designed to be lightweight and efficient, it's a perfect demonstration of edge AI capabilities, making it ideal for various applications such as home automation, security, and educational purposes.This guide provides step-by-step instructions for how to set up TensorFlow Lite on the Raspberry Pi and use it to run object detection models
 <p align=center>
-<img src="https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/assets/145309713/1c5b9b39-831e-4db2-aa8f-e0ced233a0c6" width="500" height="300">
+<img src="https://github.com/user-attachments/assets/62a2207d-438f-4402-9cb8-b64190d89a65" width="500" height="300">
 </p>
 
 ## Features
@@ -12,7 +12,7 @@ Welcome to our Object Detection project, built using TensorFlow Lite and Raspber
 <li>Easy Setup: Simple installation and configuration process to get the model up and running quickly.</li></br>
 </ul>
 <p align=center>
-<img src="https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/assets/145309713/523a6fe4-77b5-4511-b9c7-f1f961fc3e91" width="500" height="300">
+<img src="https://github.com/user-attachments/assets/20478218-31d0-462a-95b3-d9ce8eeef9c9" width="500" height="300">
 </p>
 
 ## How it works
@@ -21,9 +21,7 @@ Welcome to our Object Detection project, built using TensorFlow Lite and Raspber
 <li>Process: The captured images are processed using a pre-trained TensorFlow Lite object detection model.</li>
 <li>Identify: The model identifies the objects present in the images and outputs their names.</li>
 </ul>
-<p align=center>
-<img src="https://github.com/Iswarya-Singaram/Object_Detection_Using_TensorflowLite/assets/145309713/388ab8fa-658e-48ad-8340-a8045cc43135" width="500" height="300">
-</p>
+
 
  ## Requirements
    <ol>
